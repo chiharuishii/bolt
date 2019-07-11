@@ -4,7 +4,7 @@
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <meta name="description" content="This is my portfolio site.">
     <meta name="keywords" content="bolt, bootstrap, portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
@@ -17,7 +17,12 @@
     <header class="header">
       <div class="inner header-inner">
           <i class="fas fa-bolt fa-2x"></i>
-          <button type="button" class="btn-content">contact</button>
+          <button type="button" class="contact-btn">contact</button>
+            <div id="humberger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
       </div>
     </header>
 
@@ -66,7 +71,7 @@
           </div>
 
           <div class="work-note">
-            <p class="work-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis recusandae ut omnis cupiditate alias totam, ipsam accusamus voluptatem magni soluta cum! Nam officiis accusantium aperiam cum illo neque dolore eveniet?</p>
+            <p class="work-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis recusandae ut omnis cupiditate alias totam, </p>
             <p class="btn-content work-btn">Email&nbsp;Me!</p>
           </div>
         </div>
@@ -76,7 +81,7 @@
         <!-- our skills -->
         <h1>OUR SKILLS</h1>
         <div class="inner skills-inner">
-          <figure>
+          <figure class="skills-content">
             <img src="img/circle_01.png" alt="">
             <figcaption>Javascript</figcaption>
           </figure>
@@ -89,7 +94,7 @@
           <figure class="skills-content">
             <img src="img/circle_03.png" alt="">
             <figcaption>Wordpress</figcaption>
-          </figure>>
+          </figure>
           
           <figure class="skills-content">
             <img src="img/circle_04.png" alt="">
@@ -102,10 +107,19 @@
       <nav class="links">
         <!-- リンク一覧 -->
         <div class="inner links-inner">
-          <a  class="link" href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-3x"></i></a>
-          <a  class="link"href="https://www.google.com/?hl=ja"><i class="fab fa-google fa-3x"></i></a>
-          <a  class="link" href="https://twitter.com/login?lang=ja"><i class="fab fa-twitter fa-3x"></i></a>
-          <a  class="link"href="info@example.com"><i class="fas fa-envelope fa-3x"></i></a>
+          
+          <div class="link-box">
+            <a class="link" href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-3x"></i></a>
+          </div>
+          <div class="link-box">
+            <a class="link" href="https://www.google.com/?hl=ja"><i class="fab fa-google fa-3x"></i></a>
+          </div>
+          <div class="link-box">
+            <a class="link" href="https://twitter.com/login?lang=ja"><i class="fab fa-twitter fa-3x"></i></a>
+          </div>
+          <div class="link-box">
+            <a class="link" href="info@example.com"><i class="fas fa-envelope fa-3x"></i></a>
+          </div>
         </div>
         
       </nav>
