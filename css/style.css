@@ -107,14 +107,24 @@
 }
 .work-img{
   margin: 80px 0px 90px 0px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap; 
+}
+.work-img-img img{
+  margin-left: 80px;
+}
+.work-img-img:nth-child(1,3){
+  margin-left:0;
 }
 .work-img img{
   opacity:0.7;
   transition: opacity .3s;
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
   
+  
+}
+.work-img img:first-child{
+  padding-left:0;
 }
 .work-img img:hover{
   opacity:1;
@@ -139,6 +149,7 @@
 .work-text{
   margin-right: 90px;
   color: #333;
+  line-height: 20px;
 }
 .skills{
   width:100%;
