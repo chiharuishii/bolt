@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* pc */
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1199px) {
   /*ここにpc用スタイルを記述*/
 .inner{
  width: 1100px;
@@ -111,20 +111,19 @@
   /* justify-content: space-between; */
   flex-wrap: wrap; 
 }
-.work-img-img img{
-  margin-left: 80px;
-}
-.work-img-img:nth-child(1,3){
-  margin-left:0;
-}
-.work-img img{
+
+.work-img-img{
   opacity:0.7;
   transition: opacity .3s;
-  
-  
+  margin-top: 80px;
+  margin-left: 100px;
 }
-.work-img img:first-child{
-  padding-left:0;
+
+.work-img .work-img-img:nth-child(-n+3) {
+  margin-top: 0;
+}
+.work-img .work-img-img:nth-child(3n+1) {
+  margin-left: 0;
 }
 .work-img img:hover{
   opacity:1;
@@ -223,14 +222,223 @@
 
 
 
-@media only screen and (min-width: 641px) and (max-width: 960px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   /*ここにtablet用スタイルを記述*/
-  .inner{
+.inner{
     width: 97%;
     box-sizing: border-box;
     margin: 0 auto;
   }
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
 }
+.header{
+ width: 100%;
+ text-align: center;
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index:24;
+ background-color: #f2f2f2;
+}
+.header-inner{
+ display: flex;
+ justify-content: space-between;
+ padding:15px 0;
+}
+.contact-btn{
+  font-size: 12px;
+  padding: 14px 12px;
+  background-color: #74cfae;
+  color: #fff;
+  transition: color .3s;
+}
+.contact-btn:hover{
+  color: #333;
+}
+#humberger{
+  display: none;
+}
+/* .btn-content{
+ font-size: 12px;
+ padding: 14px 12px;
+ background-color: #74cfae;
+ color: #fff;
+ transition: color .3s;
+}
+.btn-content:hover{
+  color: #333;
+} */
+.theme{
+  width:100%;
+  background-color: #f2f2f2;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  text-align: center;
+}
+.theme h1{
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+.theme p{
+  font-size: 30px;
+  color:#c0c0c0;
+  margin-top: 20px;
+} 
+.whatwecando{
+  background-color: #74cfae;
+  text-align: center;
+}
+.whatwecando img{
+  /* margin-top: 50px; */
+}
+.whatwecando-inner{
+  display: flex;
+  padding-top: 50px;
+}
+.whatwecando-note h2{
+  font-family: 'Raleway';
+  font-size: 24px;
+  color: #fff;
+}
+.whatwecando-note p{
+  font-size: 20px;
+  color: #fff;
+  margin-top: 35px;
+  align-items: end;
+  line-height: 30px;
+}
+.whatwecando-note{
+  /* margin: auto; */
+  margin-left: 50px;
+}
+.work{
+  width:100%;
+  background-color: #f2f2f2;
+  padding: 60px 0 70px 0;
+}
+.work h2{
+  font-size: 24px;
+  font-family: 'Raleway';
+  margin-bottom: 40px;
+  text-align: center;
+}
+.work-img{
+  margin: 80px 0px 90px 0px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap; 
+}
+
+.work-img-img{
+  opacity:0.7;
+  transition: opacity .3s;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+.work-img .work-img-img:nth-child(-n+3) {
+  margin-top: 0;
+}
+.work-img .work-img-img:nth-child(3n+1) {
+  margin-left: 0;
+}
+.work-img img:hover{
+  opacity:1;
+}
+/* .work-img-top,.work-img-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.work-img-top{
+  margin-bottom: 80px;
+}
+.work-img-bottom{
+  margin-bottom: 90px;
+} */
+.work-note{
+  text-align: center;
+  padding: 0 90px 70px 0;
+  width: 800px;
+  display: flex;
+  margin: 0 auto;
+}
+.work-text{
+  margin-right: 90px;
+  color: #333;
+  line-height: 20px;
+}
+.skills{
+  width:100%;
+  background-color: #4e4e4e;
+}
+.skills h1{
+  font-size: 24px;
+  font-family: 'Raleway';
+  color: #fff;
+  text-align: center;
+  padding-top: 70px;
+}
+.skills h2{
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+.skills-inner{
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  justify-content: center;
+}
+.skills-content{
+  margin-left: 180px;
+}
+.skills-content:nth-of-type(1){
+  margin-left: 0;
+}
+.links{
+  width:100%;
+  background-color: #f2f2f2;
+}
+.links-inner{
+  display: flex;
+  padding:200px 0;
+  justify-content: center;
+}
+.link-box{
+  width: 185px;
+  text-align: center;
+  padding: 20px 0;
+  transition: background-color .3s;
+}
+.link{
+  color: #74cfae;
+}
+.link-box:hover{
+  background-color: #fff;
+
+}
+.footer{
+  width:100%;
+  background-color: #74cfae;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+.footer p{
+  color: #fff;
+  text-align: right;
+  
+　}
+}
+
+  
+
+
    
 
 
@@ -240,7 +448,7 @@
 
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
   /*ここにスマホ用スタイルを記述*/
   .inner{
     width: 97%;
