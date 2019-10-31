@@ -1,219 +1,207 @@
 @charset "UTF-8";
+a{
+  text-decoration: none;
+ display: inline-block;
+}
+img{
+  vertical-align: top;
+}
 
 /* pc */
 @media screen and (min-width: 1200px) {
   /*ここにpc用スタイルを記述*/
-.inner{
- width: 1100px;
- box-sizing: border-box;
- margin: 0 auto;
-}
-.clearfix::after{
-  content: "";
-  display: block;
-  clear: both;
-}
-.header{
- width: 100%;
- text-align: center;
- position: fixed;
- top: 0;
- left: 0;
- z-index:24;
- background-color: #fff;
-}
-.header-inner{
- display: flex;
- justify-content: space-between;
- padding:15px 0;
-}
-.contact-btn{
-  font-size: 12px;
-  padding: 14px 12px;
-  background-color: #74cfae;
-  color: #fff;
-  transition: color .3s;
-}
-.contact-btn:hover{
-  color: #333;
-}
-#humberger{
-  display: none;
-}
-/* .btn-content{
- font-size: 12px;
- padding: 14px 12px;
- background-color: #74cfae;
- color: #fff;
- transition: color .3s;
-}
-.btn-content:hover{
-  color: #333;
-} */
-.main{
-  padding-top: 70px;
-}
-.theme{
-  width:100%;
-  background-color: #f2f2f2;
-  padding-top: 250px;
-  padding-bottom: 250px;
-  text-align: center;
-}
-.theme h1{
-  font-size: 90px;
-  font-weight: 700;
-  color: #74cfae;
-}
-.theme p{
-  font-size: 30px;
-  color:#c0c0c0;
-  margin-top: 20px;
-} 
-.whatwecando{
-  background-color: #74cfae;
-  text-align: center;
-}
-.whatwecando img{
-  /* margin-top: 50px; */
-}
-.whatwecando-inner{
-  display: flex;
-  padding-top: 50px;
-}
-.whatwecando-note h2{
-  font-family: 'Raleway';
-  font-size: 24px;
-  color: #fff;
-}
-.whatwecando-note p{
-  font-size: 20px;
-  color: #fff;
-  margin-top: 35px;
-  align-items: end;
-  line-height: 30px;
-}
-.whatwecando-note{
-  /* margin: auto; */
-  margin-left: 50px;
-}
-.work{
-  width:100%;
-  background-color: #f2f2f2;
-  padding: 60px 0 70px 0;
-}
-.work h2{
-  font-size: 24px;
-  font-family: 'Raleway';
-  margin-bottom: 40px;
-  text-align: center;
-}
-.work-img{
-  margin: 80px 0px 90px 0px;
-  display: flex;
-  /* justify-content: space-between; */
-  flex-wrap: wrap; 
-}
+  .inner{
+    width: 1100px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .header{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:24;
+    background-color: #fff;
+  }
+  .header-inner{
+    display: flex;
+    justify-content: space-between;
+    padding:15px 0;
+  }
+  .contact-btn{
+    font-size: 12px;
+    padding: 14px 12px;
+    background-color: #74cfae;
+    color: #fff;
+    transition: color .3s;
+  }
+  .contact-btn:hover{
+    color: #333;
+  }
+  #humberger{
+    display: none;
+  }
+  .main{
+    padding-top: 70px;
+  }
+  .theme{
+    width:100%;
+    background-color: #f2f2f2;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    text-align: center;
+  }
+  .theme h1{
+    font-size: 90px;
+    font-weight: 700;
+    color: #74cfae;
+  }
+  .theme p{
+    font-size: 30px;
+    color:#c0c0c0;
+    margin-top: 20px;
+  } 
+  .whatwecando{
+    background-color: #74cfae;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .whatwecando-img{
+    width: 40%;
+  }
+  .whatwecando-inner{
+    display: flex;
+    
+  }
+  .whatwecando-note h2{
+    font-family: 'Raleway';
+    font-size: 24px;
+    color: #fff;
+  }
+  .whatwecando-note p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 35px;
+    align-items: end;
+    line-height: 30px;
+  }
+  .whatwecando-note{
+    /* margin: auto; */
+    
+    width: 60%;
+  }
+  .work{
+    width:100%;
+    background-color: #f2f2f2;
+    padding: 60px 0 70px;
+  }
+  .work h2{
+    font-size: 24px;
+    font-family: 'Raleway';
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .work-img{
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap; 
+  }
 
-.work-img-img{
-  opacity:0.7;
-  transition: opacity .3s;
-  margin-top: 80px;
-  margin-left: 100px;
-}
+  .work-img-img{
+    opacity:0.7;
+    transition: opacity .3s;
+    margin-top: 80px;
+    margin-left: 100px;
+  }
 
-.work-img .work-img-img:nth-child(-n+3) {
-  margin-top: 0;
-}
-.work-img .work-img-img:nth-child(3n+1) {
-  margin-left: 0;
-}
-.work-img img:hover{
-  opacity:1;
-}
-/* .work-img-top,.work-img-bottom{
-  display: flex;
-  justify-content: space-between;
-}
-.work-img-top{
-  margin-bottom: 80px;
-}
-.work-img-bottom{
-  margin-bottom: 90px;
-} */
-.work-note{
-  text-align: center;
-  padding: 0 90px 70px 0;
-  width: 800px;
-  display: flex;
-  margin: 0 auto;
-}
-.work-text{
-  margin-right: 90px;
-  color: #333;
-  line-height: 20px;
-}
-.skills{
-  width:100%;
-  background-color: #4e4e4e;
-}
-.skills h1{
-  font-size: 24px;
-  font-family: 'Raleway';
-  color: #fff;
-  text-align: center;
-  padding-top: 70px;
-}
-.skills h2{
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 15px;
-}
-.skills-inner{
-  display: flex;
-  margin-top: 50px;
-  padding-bottom: 100px;
-  justify-content: center;
-}
-.skills-content{
-  margin-left: 180px;
-}
-.skills-content:nth-of-type(1){
-  margin-left: 0;
-}
-.links{
-  width:100%;
-  background-color: #f2f2f2;
-}
-.links-inner{
-  display: flex;
-  padding:200px 0;
-  justify-content: center;
-}
-.link-box{
-  width: 185px;
-  text-align: center;
-  padding: 20px 0;
-  transition: background-color .3s;
-}
-.link{
-  color: #74cfae;
-}
-.link-box:hover{
-  background-color: #fff;
+  .work-img .work-img-img:nth-child(-n+3) {
+    margin-top: 0;
+  }
+  .work-img .work-img-img:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  .work-img-img:hover{
+    opacity:1;
+  }
+  .work-note{
+    text-align: center;
+    width: 800px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .work-text{
+    margin-right: 90px;
+    color: #333;
+    line-height: 20px;
+  }
+  .skills{
+    width:100%;
+    background-color: #4e4e4e;
+    padding:70px 0 100px ;
+  }
+  .skills h2{
+    font-size: 24px;
+    font-family: 'Raleway';
+    color: #fff;
+    text-align: center;
+  }
+  .skills p{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+  }
 
-}
-.footer{
-  width:100%;
-  background-color: #74cfae;
-  padding-top: 20px;
-  padding-bottom: 25px;
-}
-.footer p{
-  color: #fff;
-  text-align: right;
-}
+  .skills-content{
+    display: flex;
+    justify-content: center;
+    margin-top:70px;
+  }
+  .skills-img{
+    margin-left: 180px;
+  }
+  .skills-img:nth-of-type(1){
+    margin-left: 0;
+  }
+  .links{
+    width:100%;
+    background-color: #f2f2f2;
+    padding:200px 0;
+  }
+  .links-inner{
+    display: flex;
+    justify-content: center;
+  }
+  .link-box{
+    text-align: center;
+    
+  }
+  .link{
+    color: #74cfae;
+    padding: 20px 0;
+    width: 185px;
+    transition:background-color.3s;
+  }
+  .link:hover{
+    background-color: #fff;
+
+  }
+  .footer{
+    width:100%;
+    background-color: #74cfae;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .footer p{
+    color: #fff;
+    text-align: right;
+  }
 
 }
 
@@ -227,262 +215,214 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   /*ここにtablet用スタイルを記述*/
-.inner{
+  .inner{
     width: 97%;
     box-sizing: border-box;
     margin: 0 auto;
   }
 
-.clearfix::after{
-  content: "";
-  display: block;
-  clear: both;
-}
-.header{
- width: 100%;
- text-align: center;
- position: fixed;
- top: 0;
- left: 0;
- z-index:24;
- background-color: #fff;
-}
-.header-inner{
- display: flex;
- justify-content: space-between;
- padding:15px 0;
-}
-.contact-btn{
-  font-size: 12px;
-  padding: 14px 20px;
-  background-color: #74cfae;
-  color: #fff;
-  transition: color .3s;
-  box-sizing: border-box;
-  display: inline-block;
-}
-.contact-btn:hover{
-  color: #333;
-}
-#humberger{
-  display: none;
-}
-/* .btn-content{
- font-size: 12px;
- padding: 14px 12px;
- background-color: #74cfae;
- color: #fff;
- transition: color .3s;
-}
-.btn-content:hover{
-  color: #333;
-} */
-.main{
-  padding-top: 70px;
-}
-.theme{
-  width:100%;
-  background-color: #f2f2f2;
-  padding-top: 250px;
-  padding-bottom: 250px;
-  text-align: center;
-}
-.theme h1{
-  font-size: 90px;
-  font-weight: 700;
-  color: #74cfae;
-}
-.theme p{
-  font-size: 30px;
-  color:#c0c0c0;
-  margin-top: 20px;
-} 
-.whatwecando{
-  background-color: #74cfae;
-  text-align: center;
-  padding:50px 0 25px;
-}
-.whatwecando img{
-  /* margin-top: 50px; */
-}
-.whatwecando-inner{
-  /* display: flex; */
-  
-}
-.whatwecando-note h2{
-  font-family: 'Raleway';
-  font-size: 24px;
-  color: #fff;
-  
-}
-.whatwecando-note p{
-  font-size: 20px;
-  color: #fff;
-  margin-top: 35px;
-  
-  align-items: end;
-  line-height: 30px;
-}
-.whatwecando-note{
-  /* margin: auto; */
-  /* margin-left: 50px; */
-  margin-top:20px;
-}
-.work{
-  width:100%;
-  background-color: #f2f2f2;
-  padding: 60px 0 70px 0;
-}
-.work-inner{
- box-sizing: border-box;
- width: 100%;
-}
-.work h2{
-  font-size: 24px;
-  font-family: 'Raleway';
-  margin-bottom: 40px;
-  text-align: center;
-}
-.work-img .work-img-img:nth-child(3n){
-  margin-bottom: 80px;
-}
-.work-img .work-img-img:last-child{
- margin-bottom: 0;
-}
+  .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .header{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:24;
+    background-color: #fff;
+  }
+  .header-inner{
+    display: flex;
+    justify-content: space-between;
+    padding:15px 0;
+  }
+  .contact-btn{
+    font-size: 12px;
+    padding: 14px 20px;
+    background-color: #74cfae;
+    color: #fff;
+    transition: color .3s;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  .contact-btn:hover{
+    color: #333;
+  }
+  #humberger{
+    display: none;
+  }
+  .main{
+    padding-top: 70px;
+  }
+  .theme{
+    width:100%;
+    background-color: #f2f2f2;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    text-align: center;
+  }
+  .theme h1{
+    font-size: 90px;
+    font-weight: 700;
+    color: #74cfae;
+  }
+  .theme p{
+    font-size: 30px;
+    color:#c0c0c0;
+    margin-top: 20px;
+  } 
+  .whatwecando{
+    background-color: #74cfae;
+    text-align: center;
+    padding:50px 0 25px;
+  }
+  .whatwecando-note h2{
+    font-family: 'Raleway';
+    font-size: 24px;
+    color: #fff;
+  }
+  .whatwecando-note p{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 35px;
+    align-items: end;
+    line-height: 30px;
+  }
+  .whatwecando-note{
+    margin-top:20px;
+  }
+  .work{
+    width:100%;
+    background-color: #f2f2f2;
+    padding: 60px 0 70px 0;
+  }
+  .work-inner{
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .work h2{
+    font-size: 24px;
+    font-family: 'Raleway';
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .work-img .work-img-img:nth-child(3n){
+    margin-bottom: 80px;
+  }
+  .work-img .work-img-img:last-child{
+  margin-bottom: 0;
+  }
 
-.work-img{
-  
+  .work-img{
+    flex-wrap: wrap; 
+  }
 
-  
-  /* justify-content: space-between; */
-  flex-wrap: wrap; 
-}
-
-.work-img-img{
-  opacity:0.7;
-  transition: opacity .3s;
-  display: block;
-  margin: 0 auto;
-  max-width:300px;
-}
+  .work-img-img{
+    opacity:0.7;
+    transition: opacity .3s;
+    display: block;
+    margin: 0 auto;
+    max-width:300px;
+  }
 
 
-.work-img img:hover{
-  opacity:1;
-}
-/* .work-img-top,.work-img-bottom{
-  display: flex;
-  justify-content: space-between;
-}
-.work-img-top{
-  margin-bottom: 80px;
-}
-.work-img-bottom{
-  margin-bottom: 90px;
-} */
-.work-note{
-  text-align: center;
-  margin-top:80px;
-  width: 100%;
-  
-  
-}
-.work-text{
-  
-  color: #333;
-  line-height: 20px;
-  
-  
-}
-.work-btn{
-  text-align: center;
-  margin: 40px 0 70px 0;
-  
-
-}
-.skills{
-  width:100%;
-  background-color: #4e4e4e;
-}
-.skills h1{
-  font-size: 24px;
-  font-family: 'Raleway';
-  color: #fff;
-  text-align: center;
-  padding-top: 70px;
-}
-.skills h2{
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 15px;
-}
-.skills-inner{
-  
-  margin-top: 50px;
-  padding-bottom: 100px;
-  justify-content: center;
-}
-.skills-content{
-  max-width: 20%;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 78px;
-} 
-.skills-content h2{
-  margin:0 auto;
-  padding-top: 10px;
-  
-}
-/* .skills-content:nth-of-type(1){
-  margin-left: 0;
-} */
-.links{
-  width:100%;
-  background-color: #f2f2f2;
-}
-.links-inner{
-  display: flex;
-  padding:200px 0;
-  justify-content: center;
-}
-.link-box{
-  width: 185px;
-  text-align: center;
-  padding: 20px 0;
-  transition: background-color .3s;
-}
-.link{
-  color: #74cfae;
-}
-.link-box:hover{
-  background-color: #fff;
-
-}
-.footer{
-  width:100%;
-  background-color: #74cfae;
-  padding-top: 20px;
-  padding-bottom: 25px;
-}
-.footer p{
-  color: #fff;
-  text-align: right;
-}
+  .work-img img:hover{
+    opacity:1;
+  }
+  .work-note{
+    text-align: center;
+    margin-top:80px;
+    width: 100%;
+  }
+  .work-text{
+    color: #333;
+    line-height: 20px;
+  }
+  .work-btn{
+    text-align: center;
+    margin: 40px 0 70px 0;
+  }
+  .skills{
+    width:100%;
+    background-color: #4e4e4e;
+  }
+  .skills h1{
+    font-size: 24px;
+    font-family: 'Raleway';
+    color: #fff;
+    text-align: center;
+    padding-top: 70px;
+  }
+  .skills h2{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .skills-inner{
+    margin-top: 50px;
+    padding-bottom: 100px;
+    justify-content: center;
+  }
+  .skills-content{
+    max-width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 78px;
+  } 
+  .skills-content h2{
+    margin:0 auto;
+    padding-top: 10px;
+  }
+  .links{
+    width:100%;
+    background-color: #f2f2f2;
+  }
+  .links-inner{
+    display: flex;
+    padding:200px 0;
+    justify-content: center;
+  }
+  .link-box{
+    width: 185px;
+    text-align: center;
+    padding: 20px 0;
+    transition: background-color .3s;
+  }
+  .link{
+    color: #74cfae;
+  }
+  .link-box:hover{
+    background-color: #fff;
+  }
+  .footer{
+    width:100%;
+    background-color: #74cfae;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  .footer p{
+    color: #fff;
+    text-align: right;
+  }
 }
 
 
-   
+    
 
 
 
-  /* smartPhone */
+    /* smartPhone */
 
 
 
 
-@media screen and (max-width: 767px) {
-  /*ここにスマホ用スタイルを記述*/
+  @media screen and (max-width: 767px){
+    /*ここにスマホ用スタイルを記述*/
   .inner{
     width: 97%;
     box-sizing: border-box;
@@ -494,12 +434,12 @@
     position: fixed;
     background-color: #fff;
     z-index: 10;
-   }
+    }
   .header-inner{
     display: flex;
     justify-content: space-between;
     padding: 15px;
-   }
+    }
   .contact-btn{
     display: none;
   }
@@ -548,7 +488,7 @@
     transition: color .3s;
     width: 30%;
     margin: 0 auto;
-   }
+    }
   .main{
     padding-top: 66px;
   }
@@ -576,10 +516,6 @@
   .whatwecando img{
     padding-top: 50px;
   }
-  .whatwecando-inner{
-    /* display: flex; */
-    
-  }
   .whatwecando h3{
     font-family: 'Raleway';
     font-size: 24px;
@@ -604,37 +540,19 @@
     margin:60px 0 40px 0;
     text-align: center;
   }
-  
-  /* .work-img{
-    display: flex;
-  } */
   .work-img img{
-    /* display: flex; */
     margin: 0 auto;
   }
   .work-img-img{
     opacity:0.7;
     transition: opacity .3s;
-
   }
   .work-img-img:hover{
     opacity:1;
   }
-  /* .work-img-top,.work-img-bottom{
-    display: flex;
-    justify-content: space-between;
-  } */
-  /* .work-img-top{
-    margin-bottom: 80px;
-  }
-  .work-img-bottom{
-    margin-bottom: 90px;
-  } */
   .work-note{
     text-align: center;
     padding: 100px 0;
-    /* width: 800px; */
-    /* display: flex; */
     margin: 0 auto;
   }
   .work-text{
@@ -649,7 +567,6 @@
     background-color: #74cfae;
     color: #fff;
     transition: color .3s;
-    
   }
   .contact-btn:hover{
     color: #333;
@@ -672,7 +589,6 @@
     padding-top: 15px;
   }
   .skills-inner{
-    /* display: flex; */
     padding-top: 50px;
     padding-bottom: 100px;
     text-align: center;
@@ -685,11 +601,9 @@
     background-color: #f2f2f2;
   }
   .links-inner{
-    /* display: flex; */
     padding:50px 15px;
   }
   .link-box{
-    /* border: 1px solid red; */
     box-sizing: border-box;
     text-align: center;
     padding: 10px;
@@ -702,7 +616,6 @@
   }
   .link-box:hover{
     background-color: #fff;
-  
   }
   .footer{
     width:100%;
@@ -714,8 +627,8 @@
     padding-top: 20px;
     padding-bottom: 25px;
   }
+
 }
 
 
 
-/* ここから元のやつ（pc） */
