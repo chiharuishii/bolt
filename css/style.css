@@ -1,75 +1,149 @@
 @charset "UTF-8";
 a{
   text-decoration: none;
- display: inline-block;
+  display: inline-block;
 }
 img{
   vertical-align: top;
 }
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.inner{
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.header{
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  z-index:24;
+  background-color: #fff;
+}
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  padding:15px 0;
+}
+.contact-btn{
+  font-size: 12px;
+  padding: 14px 12px;
+  background-color: #74cfae;
+  color: #fff;
+  transition: color .3s;
+}
+.contact-btn:hover{
+  color: #333;
+}
+.theme{
+  width:100%;
+  background-color: #f2f2f2;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  text-align: center;
+}
+.theme h1{
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+.theme p{
+  font-size: 30px;
+  color:#c0c0c0;
+  margin-top: 20px;
+} 
+.main{
+  padding-top: 70px;
+}
+.whatwecando{
+  background-color: #74cfae;
+  text-align: center;
+}
+.whatwecando-note h2{
+  font-family: 'Raleway';
+  font-size: 24px;
+  color: #fff;
+}
+/* ↑pc/tabletのみ */
+.whatwecando-note p{
+  font-size: 20px;
+  color: #fff;
+  margin-top: 35px;
+  align-items: end;
+  line-height: 30px;
+}
+/* ↑pc/tabletのみ */
+.work{
+  width:100%;
+  background-color: #f2f2f2;
+  padding: 60px 0 70px;
+}
+.work h2{
+  font-size: 24px;
+  font-family: 'Raleway';
+  margin-bottom: 40px;
+  text-align: center;
+}
+.work-img-img:hover{
+  opacity:1;
+}
+.work-note{
+  text-align: center;
+}
+.skills{
+  width:100%;
+  background-color: #4e4e4e;
+}
+.skills h2{
+  font-size: 24px;
+  font-family: 'Raleway';
+  color: #fff;
+  text-align: center;
+}
+.skills p{
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+/* ↑pc/tabletのみ */
+.links{
+  width:100%;
+  background-color: #f2f2f2;
+}
+.links-inner{
+  display: flex;
+  justify-content: center;
+}
+.link{
+  color: #74cfae;
+}
+.link-box{
+  text-align: center;
+}
+.footer{
+  width:100%;
+  background-color: #74cfae;
+}
+.footer p{
+  color: #fff;
+  text-align: right;
+}
+
+
 
 /* pc */
 @media screen and (min-width: 1200px) {
   /*ここにpc用スタイルを記述*/
   .inner{
     width: 1100px;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
-  .clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .header{
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index:24;
-    background-color: #fff;
-  }
-  .header-inner{
-    display: flex;
-    justify-content: space-between;
-    padding:15px 0;
-  }
-  .contact-btn{
-    font-size: 12px;
-    padding: 14px 12px;
-    background-color: #74cfae;
-    color: #fff;
-    transition: color .3s;
-  }
-  .contact-btn:hover{
-    color: #333;
   }
   #humberger{
     display: none;
   }
-  .main{
-    padding-top: 70px;
-  }
-  .theme{
-    width:100%;
-    background-color: #f2f2f2;
-    padding-top: 250px;
-    padding-bottom: 250px;
-    text-align: center;
-  }
-  .theme h1{
-    font-size: 90px;
-    font-weight: 700;
-    color: #74cfae;
-  }
-  .theme p{
-    font-size: 30px;
-    color:#c0c0c0;
-    margin-top: 20px;
-  } 
   .whatwecando{
-    background-color: #74cfae;
-    text-align: center;
     padding-top: 50px;
   }
   .whatwecando-img{
@@ -77,60 +151,29 @@ img{
   }
   .whatwecando-inner{
     display: flex;
-    
-  }
-  .whatwecando-note h2{
-    font-family: 'Raleway';
-    font-size: 24px;
-    color: #fff;
-  }
-  .whatwecando-note p{
-    font-size: 20px;
-    color: #fff;
-    margin-top: 35px;
-    align-items: end;
-    line-height: 30px;
   }
   .whatwecando-note{
-    /* margin: auto; */
-    
     width: 60%;
-  }
-  .work{
-    width:100%;
-    background-color: #f2f2f2;
-    padding: 60px 0 70px;
-  }
-  .work h2{
-    font-size: 24px;
-    font-family: 'Raleway';
-    margin-bottom: 40px;
-    text-align: center;
   }
   .work-img{
     margin-bottom: 90px;
     display: flex;
     flex-wrap: wrap; 
   }
-
   .work-img-img{
     opacity:0.7;
     transition: opacity .3s;
     margin-top: 80px;
     margin-left: 100px;
   }
-
   .work-img .work-img-img:nth-child(-n+3) {
     margin-top: 0;
   }
   .work-img .work-img-img:nth-child(3n+1) {
     margin-left: 0;
   }
-  .work-img-img:hover{
-    opacity:1;
-  }
+ 
   .work-note{
-    text-align: center;
     width: 800px;
     display: flex;
     margin: 0 auto;
@@ -141,21 +184,7 @@ img{
     line-height: 20px;
   }
   .skills{
-    width:100%;
-    background-color: #4e4e4e;
     padding:70px 0 100px ;
-  }
-  .skills h2{
-    font-size: 24px;
-    font-family: 'Raleway';
-    color: #fff;
-    text-align: center;
-  }
-  .skills p{
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 15px;
   }
 
   .skills-content{
@@ -169,21 +198,7 @@ img{
   .skills-img:nth-of-type(1){
     margin-left: 0;
   }
-  .links{
-    width:100%;
-    background-color: #f2f2f2;
-    padding:200px 0;
-  }
-  .links-inner{
-    display: flex;
-    justify-content: center;
-  }
-  .link-box{
-    text-align: center;
-    
-  }
   .link{
-    color: #74cfae;
     padding: 20px 0;
     width: 185px;
     transition:background-color.3s;
@@ -193,14 +208,8 @@ img{
 
   }
   .footer{
-    width:100%;
-    background-color: #74cfae;
     padding-top: 20px;
     padding-bottom: 25px;
-  }
-  .footer p{
-    color: #fff;
-    text-align: right;
   }
 
 }
@@ -217,99 +226,27 @@ img{
   /*ここにtablet用スタイルを記述*/
   .inner{
     width: 97%;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
-
-  .clearfix::after{
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .header{
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index:24;
-    background-color: #fff;
-  }
-  .header-inner{
-    display: flex;
-    justify-content: space-between;
-    padding:15px 0;
   }
   .contact-btn{
-    font-size: 12px;
-    padding: 14px 20px;
-    background-color: #74cfae;
-    color: #fff;
-    transition: color .3s;
     box-sizing: border-box;
     display: inline-block;
   }
-  .contact-btn:hover{
-    color: #333;
-  }
   #humberger{
     display: none;
-  }
-  .main{
-    padding-top: 70px;
-  }
-  .theme{
-    width:100%;
-    background-color: #f2f2f2;
-    padding-top: 250px;
-    padding-bottom: 250px;
-    text-align: center;
-  }
-  .theme h1{
-    font-size: 90px;
-    font-weight: 700;
-    color: #74cfae;
-  }
-  .theme p{
-    font-size: 30px;
-    color:#c0c0c0;
-    margin-top: 20px;
-  } 
+  }  
   .whatwecando{
-    background-color: #74cfae;
-    text-align: center;
     padding:50px 0 25px;
   }
-  .whatwecando-note h2{
-    font-family: 'Raleway';
-    font-size: 24px;
-    color: #fff;
-  }
-  .whatwecando-note p{
-    font-size: 20px;
-    color: #fff;
-    margin-top: 35px;
-    align-items: end;
-    line-height: 30px;
-  }
+ 
   .whatwecando-note{
     margin-top:20px;
   }
-  .work{
-    width:100%;
-    background-color: #f2f2f2;
-    padding: 60px 0 70px 0;
-  }
+  
   .work-inner{
     box-sizing: border-box;
     width: 100%;
   }
-  .work h2{
-    font-size: 24px;
-    font-family: 'Raleway';
-    margin-bottom: 40px;
-    text-align: center;
-  }
+  
   .work-img .work-img-img:nth-child(3n){
     margin-bottom: 80px;
   }
@@ -334,7 +271,6 @@ img{
     opacity:1;
   }
   .work-note{
-    text-align: center;
     margin-top:80px;
     width: 100%;
   }
@@ -346,22 +282,8 @@ img{
     text-align: center;
     margin: 40px 0 70px 0;
   }
-  .skills{
-    width:100%;
-    background-color: #4e4e4e;
-  }
-  .skills h1{
-    font-size: 24px;
-    font-family: 'Raleway';
-    color: #fff;
-    text-align: center;
-    padding-top: 70px;
-  }
   .skills h2{
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    margin-top: 15px;
+    padding-top: 70px;
   }
   .skills-inner{
     margin-top: 50px;
@@ -374,40 +296,24 @@ img{
     margin: 0 auto;
     padding-bottom: 78px;
   } 
-  .skills-content h2{
+  .skills-content {
     margin:0 auto;
     padding-top: 10px;
   }
-  .links{
-    width:100%;
-    background-color: #f2f2f2;
-  }
   .links-inner{
-    display: flex;
     padding:200px 0;
-    justify-content: center;
   }
   .link-box{
     width: 185px;
-    text-align: center;
     padding: 20px 0;
     transition: background-color .3s;
-  }
-  .link{
-    color: #74cfae;
   }
   .link-box:hover{
     background-color: #fff;
   }
   .footer{
-    width:100%;
-    background-color: #74cfae;
     padding-top: 20px;
     padding-bottom: 25px;
-  }
-  .footer p{
-    color: #fff;
-    text-align: right;
   }
 }
 
@@ -425,21 +331,10 @@ img{
     /*ここにスマホ用スタイルを記述*/
   .inner{
     width: 97%;
-    box-sizing: border-box;
-    margin: 0 auto;
   }
   .header{
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    background-color: #fff;
-    z-index: 10;
-    }
-  .header-inner{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    }
+    z-index: 10; 
+  }
   .contact-btn{
     display: none;
   }
@@ -493,25 +388,16 @@ img{
     padding-top: 66px;
   }
   .theme{
-    width:100%;
-    background-color: #f2f2f2;
     padding-top: 160px;
     padding-bottom: 130px;
-    text-align: center;
   }
   .theme h1{
     font-size:80px;
-    font-weight: 700;
-    color: #74cfae;
   }
   .theme h2{
     font-size: 30px;
     color:#c0c0c0;
     margin-top: 20px;
-  }
-  .whatwecando{
-    background-color: #74cfae;
-    text-align: center;
   }
   .whatwecando img{
     padding-top: 50px;
@@ -529,16 +415,8 @@ img{
   .whatwecando-note{
     padding: 15px;
   }
-  .work{
-    width:100%;
-    background-color: #f2f2f2;
-    text-align: center;
-  }
   .work h2{
-    font-size: 24px;
-    font-family: 'Raleway';
-    margin:60px 0 40px 0;
-    text-align: center;
+    margin-bottom: none;
   }
   .work-img img{
     margin: 0 auto;
@@ -547,11 +425,8 @@ img{
     opacity:0.7;
     transition: opacity .3s;
   }
-  .work-img-img:hover{
-    opacity:1;
-  }
+ 
   .work-note{
-    text-align: center;
     padding: 100px 0;
     margin: 0 auto;
   }
@@ -560,20 +435,6 @@ img{
     color: #4e4e4e;
     line-height: 180%;
     font-size: 18px;
-  }
-  .contact-btn{
-    font-size: 12px;
-    padding: 14px 12px;
-    background-color: #74cfae;
-    color: #fff;
-    transition: color .3s;
-  }
-  .contact-btn:hover{
-    color: #333;
-  }
-  .skills{
-    width:100%;
-    background-color: #4e4e4e;
   }
   .skills h1{
     font-size: 24px;
@@ -596,34 +457,15 @@ img{
   .skills-content{
     padding-bottom: 70px;
   }
-  .links{
-    width:100%;
-    background-color: #f2f2f2;
-  }
   .links-inner{
-    padding:50px 15px;
+    padding:200px 0;
   }
   .link-box{
-    box-sizing: border-box;
-    text-align: center;
-    padding: 10px;
+    width: 185px;
+    padding: 20px 0;
     transition: background-color .3s;
   }
-  .link{
-    text-align: center;
-    padding: 20px 0;
-    color: #74cfae;
-  }
-  .link-box:hover{
-    background-color: #fff;
-  }
-  .footer{
-    width:100%;
-    background-color: #74cfae;
-  }
   .footer p{
-    color: #fff;
-    text-align: right;
     padding-top: 20px;
     padding-bottom: 25px;
   }
