@@ -78,7 +78,6 @@ img{
 .work{
   width:100%;
   background-color: #f2f2f2;
-  padding: 60px 0 70px;
 }
 .work h2{
   font-size: 24px;
@@ -112,10 +111,6 @@ img{
 .links{
   width:100%;
   background-color: #f2f2f2;
-}
-.links-inner{
-  display: flex;
-  justify-content: center;
 }
 .link{
   color: #74cfae;
@@ -154,6 +149,9 @@ img{
   }
   .whatwecando-note{
     width: 60%;
+  }
+  .work{
+    padding: 60px 0 70px;
   }
   .work-img{
     margin-bottom: 90px;
@@ -198,6 +196,9 @@ img{
   .skills-img:nth-of-type(1){
     margin-left: 0;
   }
+  .links{
+    padding:200px 0;
+  }
   .link{
     padding: 20px 0;
     width: 185px;
@@ -240,6 +241,9 @@ img{
  
   .whatwecando-note{
     margin-top:20px;
+  }
+  .work{
+    padding: 60px 0 70px;
   }
   
   .work-inner{
@@ -302,6 +306,9 @@ img{
   }
   .links-inner{
     padding:200px 0;
+    display: flex;
+    justify-content: center;
+    
   }
   .link-box{
     width: 185px;
@@ -417,6 +424,7 @@ img{
   }
   .work h2{
     margin-bottom: none;
+    margin-top:15px;
   }
   .work-img img{
     margin: 0 auto;
@@ -424,6 +432,9 @@ img{
   .work-img-img{
     opacity:0.7;
     transition: opacity .3s;
+  }
+  .work{
+    text-align: center;
   }
  
   .work-note{
@@ -436,29 +447,30 @@ img{
     line-height: 180%;
     font-size: 18px;
   }
-  .skills h1{
+  .skills h2{
     font-size: 24px;
     font-family: 'Raleway';
     color: #fff;
     text-align: center;
     padding-top: 70px;
   }
-  .skills figcaption{
+  .skills  p{
     color: #fff;
     font-size: 16px;
     text-align: center;
     padding-top: 15px;
   }
-  .skills-inner{
+  .skills-content{
     padding-top: 50px;
     padding-bottom: 100px;
     text-align: center;
   }
-  .skills-content{
-    padding-bottom: 70px;
+  .skills-img{
+    padding-top: 30px;
   }
   .links-inner{
-    padding:200px 0;
+    padding:50px 15px;
+    width: 55%;
   }
   .link-box{
     width: 185px;
