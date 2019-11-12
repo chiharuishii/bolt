@@ -85,6 +85,10 @@ img{
   margin-bottom: 40px;
   text-align: center;
 }
+.work-img-img {
+  opacity:0.7;
+  transition: opacity .3s;
+}
 .work-img-img:hover{
   opacity:1;
 }
@@ -94,6 +98,7 @@ img{
 .skills{
   width:100%;
   background-color: #4e4e4e;
+  padding:78px 0;
 }
 .skills h2{
   font-size: 24px;
@@ -107,13 +112,30 @@ img{
   text-align: center;
   margin-top: 15px;
 }
+.skills-content{
+  text-align: center;
+} 
+.skills-img{
+  margin-top: 88px;
+}
 /* ↑pc/tabletのみ */
 .links{
   width:100%;
+  padding:200px 0;
   background-color: #f2f2f2;
+}
+.links-inner{
+  display: flex;
+  justify-content: center;
 }
 .link{
   color: #74cfae;
+  padding: 20px 0;
+  width: 185px;
+  transition:background-color.3s;
+}
+.link:hover{
+  background-color: #fff;
 }
 .link-box{
   text-align: center;
@@ -159,8 +181,6 @@ img{
     flex-wrap: wrap; 
   }
   .work-img-img{
-    opacity:0.7;
-    transition: opacity .3s;
     margin-top: 80px;
     margin-left: 100px;
   }
@@ -196,18 +216,7 @@ img{
   .skills-img:nth-of-type(1){
     margin-left: 0;
   }
-  .links{
-    padding:200px 0;
-  }
-  .link{
-    padding: 20px 0;
-    width: 185px;
-    transition:background-color.3s;
-  }
-  .link:hover{
-    background-color: #fff;
-
-  }
+  
   .footer{
     padding-top: 20px;
     padding-bottom: 25px;
@@ -239,11 +248,12 @@ img{
     padding:50px 0 25px;
   }
  
-  .whatwecando-note{
+  .whatwecando h2{
     margin-top:20px;
   }
   .work{
     padding: 60px 0 70px;
+    text-align: center;
   }
   
   .work-inner{
@@ -263,14 +273,10 @@ img{
   }
 
   .work-img-img{
-    opacity:0.7;
-    transition: opacity .3s;
     display: block;
     margin: 0 auto;
     max-width:300px;
   }
-
-
   .work-img img:hover{
     opacity:1;
   }
@@ -284,40 +290,12 @@ img{
   }
   .work-btn{
     text-align: center;
-    margin: 40px 0 70px 0;
+    margin-top: 40px;
   }
-  .skills h2{
-    padding-top: 70px;
+  .skills-img:first-child{
+    margin-top:50px;
   }
-  .skills-inner{
-    margin-top: 50px;
-    padding-bottom: 100px;
-    justify-content: center;
-  }
-  .skills-content{
-    max-width: 20%;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 78px;
-  } 
-  .skills-content {
-    margin:0 auto;
-    padding-top: 10px;
-  }
-  .links-inner{
-    padding:200px 0;
-    display: flex;
-    justify-content: center;
-    
-  }
-  .link-box{
-    width: 185px;
-    padding: 20px 0;
-    transition: background-color .3s;
-  }
-  .link-box:hover{
-    background-color: #fff;
-  }
+
   .footer{
     padding-top: 20px;
     padding-bottom: 25px;
@@ -406,8 +384,12 @@ img{
     color:#c0c0c0;
     margin-top: 20px;
   }
-  .whatwecando img{
-    padding-top: 50px;
+
+  .whatwecando{
+    padding:50px 0 25px;
+  }
+  .whatwecando h2{
+    margin-top:20px;
   }
   .whatwecando h3{
     font-family: 'Raleway';
@@ -417,65 +399,48 @@ img{
   .whatwecando p{
     font-size: 20px;
     color: #fff;
-    padding-top: 35px;
   }
-  .whatwecando-note{
-    padding: 15px;
+  .work{
+    text-align: center;
+    padding:60px 0 70px;
   }
   .work h2{
     margin-bottom: none;
-    margin-top:15px;
   }
   .work-img img{
     margin: 0 auto;
   }
   .work-img-img{
-    opacity:0.7;
-    transition: opacity .3s;
-  }
-  .work{
-    text-align: center;
-  }
- 
-  .work-note{
-    padding: 100px 0;
+    display: block;
     margin: 0 auto;
+    max-width:300px;
   }
   .work-text{
-    padding:20px 0;
     color: #4e4e4e;
     line-height: 180%;
     font-size: 18px;
+    margin-top: 80px;
   }
-  .skills h2{
-    font-size: 24px;
-    font-family: 'Raleway';
-    color: #fff;
-    text-align: center;
-    padding-top: 70px;
+  .work-btn{
+    margin-top: 40px;
   }
-  .skills  p{
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    padding-top: 15px;
+  .skills-img:first-child{
+    margin-top:50px;
   }
-  .skills-content{
-    padding-top: 50px;
-    padding-bottom: 100px;
-    text-align: center;
-  }
-  .skills-img{
-    padding-top: 30px;
+
+  .links {
+    padding:50px 15px;
+    box-sizing: border-box;
   }
   .links-inner{
-    padding:50px 15px;
-    width: 55%;
+    display: block;
   }
   .link-box{
-    width: 185px;
-    padding: 20px 0;
+    width: 100%;
     transition: background-color .3s;
+  }
+  .link {
+    width: 100%;
   }
   .footer p{
     padding-top: 20px;
