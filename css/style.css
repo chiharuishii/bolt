@@ -209,9 +209,11 @@ img{
   .skills-content{
     display: flex;
     justify-content: center;
+    margin-top: 88px;
   }
   .skills-img{
     margin-left: 180px;
+    margin-top: 0;
   }
   .skills-img:first-child{
     margin-left: 0;
@@ -258,7 +260,6 @@ img{
   
   .work-inner{
     box-sizing: border-box;
-    width: 100%;
   }
   
   .work-img .work-img-img:nth-child(3n){
@@ -292,8 +293,11 @@ img{
     text-align: center;
     margin-top: 40px;
   }
-  .skills-img:first-child{
+  .skills-content{
     margin-top:50px;
+  }
+  .skills-img:first-child{
+    margin-top: 0;
   }
 
   .footer{
